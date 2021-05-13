@@ -9,4 +9,4 @@
 # they accept any liabilities with respect to them.
 
 This is Acme Planner, my second project in D&T.
-Link to Github Repo: https://github.com/antferdom/Acme-Planner
+Link to Github Repo: https://github.com/rodgarcas/Acme-Planner
