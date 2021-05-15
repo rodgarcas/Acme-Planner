@@ -8,7 +8,7 @@ import acme.testing.AcmePlannerTest;
 
 public class AuthenticatedTaskListAllTest extends AcmePlannerTest {
 	
-	/*Positive*/@ParameterizedTest
+	@ParameterizedTest
 	@CsvFileSource(resources = "/authenticated/task/list-all.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void listAll(final int recordIndex, final String visibility, final String title, final String executionStart, final String executionEnd, final String description, final String link, final String workload) {		
