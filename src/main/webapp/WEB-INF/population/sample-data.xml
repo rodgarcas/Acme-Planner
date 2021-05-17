@@ -49,6 +49,34 @@
 	</bean>
 	
 	
+	<bean name="managerUserAccount1" class="acme.framework.entities.UserAccount">
+		<property name="username" value="manager1" />
+		<property name="password" value="manager1" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Manager1" />
+				<property name="surname" value="Manager1" />
+				<property name="email" value="manager1@gmail.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="managerManager1" />
+				<ref bean="managerAuthenticated1"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean name="managerManager1" class="acme.entities.roles.Manager">
+		<property name="userAccount" ref="managerUserAccount1" />
+	</bean>
+	
+	<bean name="managerAuthenticated1" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="managerUserAccount1" />
+	</bean>
+	
+	
 	<!-- Shouts -->
 	
 	<bean id="shout01" class="acme.entities.shouts.Shout">
@@ -371,7 +399,7 @@
 		<property name="description" value="Décima tarea"/>
 		<property name="link" value="http://happybirthday.com"/>	
 		<property name="manager" ref="managerManager"/>		
-	</bean>
+	</bean>	
 	
 	<!-- Customisation -->
 	
