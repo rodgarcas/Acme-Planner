@@ -8,7 +8,10 @@
 	<acme:message code="administrator.dashboard.form.title.general-indicators"/>
 </h2>
 
-<table class="table table-sm">	
+<table class="table table-sm">
+	<caption>
+	 <acme:message code="administrator.dashboard.form.title.general-indicators"/>
+	 </caption>	
 	<tr>
 		<th scope="row">
 			<acme:message code="administrator.dashboard.form.label.numPublicTasks"/>
@@ -50,7 +53,11 @@
 	<acme:message code="administrator.dashboard.form.title.executionPeriods"/>
 </h2>
 
-<table class="table table-sm">	
+<table class="table table-sm">
+	<caption>
+	 <acme:message code="administrator.dashboard.form.title.executionPeriods"/>
+	 </caption>	
+
 	<tr>
 		<th scope="row">
 			<acme:message code="administrator.dashboard.form.label.avgTasks"/>
@@ -95,6 +102,9 @@
 </h2>
 
 <table class="table table-sm">	
+	<caption>
+	 <acme:message code="administrator.dashboard.form.title.taskWorkloads"/>
+	 </caption>	
 	<tr>
 		<th scope="row">
 			<acme:message code="administrator.dashboard.form.label.avgTasks"/>
