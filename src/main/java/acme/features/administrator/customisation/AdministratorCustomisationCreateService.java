@@ -17,7 +17,6 @@ public class AdministratorCustomisationCreateService implements AbstractCreateSe
 	
 	@Override
 	public boolean authorise(final Request<Customisation> request) {
-		// TODO Auto-generated method stub
 		assert request != null;
 
 		return true;
@@ -26,7 +25,7 @@ public class AdministratorCustomisationCreateService implements AbstractCreateSe
 
 	@Override
 	public void bind(final Request<Customisation> request, final Customisation entity, final Errors errors) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -37,7 +36,7 @@ public class AdministratorCustomisationCreateService implements AbstractCreateSe
 
 	@Override
 	public void unbind(final Request<Customisation> request, final Customisation entity, final Model model) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -47,7 +46,7 @@ public class AdministratorCustomisationCreateService implements AbstractCreateSe
 
 	@Override
 	public Customisation instantiate(final Request<Customisation> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		
 		Customisation result;
@@ -61,7 +60,7 @@ public class AdministratorCustomisationCreateService implements AbstractCreateSe
 
 	@Override
 	public void validate(final Request<Customisation> request, final Customisation entity, final Errors errors) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -70,7 +69,7 @@ public class AdministratorCustomisationCreateService implements AbstractCreateSe
 
 	@Override
 	public void create(final Request<Customisation> request, final Customisation entity) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		
