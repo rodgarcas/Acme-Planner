@@ -8,9 +8,10 @@ import acme.testing.AcmePlannerTest;
 
 public class AuthenticatedTaskListAllTest extends AcmePlannerTest {
 	
+	//Authenticated list all the finished tasks
 	@ParameterizedTest
 	@CsvFileSource(resources = "/authenticated/task/list-all.csv", encoding = "utf-8", numLinesToSkip = 1)
-	@Order(10)
+	@Order(20)
 	public void listAll(final int recordIndex, final String visibility, final String title, final String executionStart, final String executionEnd, final String description, final String link, final String workload) {		
 		super.signIn("authenticated1", "authenticated1");
 
