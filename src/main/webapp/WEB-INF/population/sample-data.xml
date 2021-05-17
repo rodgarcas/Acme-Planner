@@ -48,6 +48,29 @@
 		<property name="userAccount" ref="managerUserAccount" />
 	</bean>
 	
+	<!-- Authenticated -->
+	
+	<bean name="authenticated1UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="authenticated1"/>
+		<property name="password" value="authenticated1"/>
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="authenticated1"/>
+				<property name="surname" value="authenticated1"/>
+				<property name="email" value="authenticated1@gmail.com"/>
+			</bean>
+		</property>
+		<property name="enabled" value="true"/>		
+		<property name="roles">
+			<list>
+				<ref bean="authenticated1Authenticated"/>
+			</list>
+		</property>
+	</bean>
+	
+	<bean name="authenticated1Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="authenticated1UserAccount" />
+	</bean>
 	
 	<bean name="managerUserAccount1" class="acme.framework.entities.UserAccount">
 		<property name="username" value="manager1" />
