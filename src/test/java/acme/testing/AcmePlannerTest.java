@@ -10,6 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
+
 package acme.testing;
 
 import org.hibernate.internal.util.StringHelper;
@@ -64,7 +65,7 @@ public abstract class AcmePlannerTest extends AcmeTest {
 		assert !StringHelper.isBlank(name);
 		assert !StringHelper.isBlank(surname);
 		assert !StringHelper.isBlank(email);
-		// phone is nullable
+
 
 		super.navigateHome();
 		super.clickOnMenu("Sign up", null);	
@@ -80,3 +81,4 @@ public abstract class AcmePlannerTest extends AcmeTest {
 	}
 
 }
+

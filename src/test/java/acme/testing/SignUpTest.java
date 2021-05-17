@@ -9,6 +9,7 @@
  * purposes. The copyright owner does not offer any warranties or representations, nor do
  * they accept any liabilities with respect to them.
  */
+
 package acme.testing;
 
 import org.junit.jupiter.api.Order;
@@ -24,6 +25,5 @@ public class SignUpTest extends AcmePlannerTest{
 		super.signUp(username, password, name, surname, email);
 		super.signIn(username, password);
 		super.signOut();
-	}
-	
+	}	
 }
